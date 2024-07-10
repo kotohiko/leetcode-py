@@ -25,6 +25,7 @@ def integerListToString(nums, len_of_list=None):
 def main():
     import sys
     import io
+
     def readlines():
         for line in io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8'):
             yield line.strip('\n')
@@ -33,13 +34,13 @@ def main():
     while True:
         try:
             line = next(lines)
-            nums = stringToIntegerList(line);
+            nums = stringToIntegerList(line)
             line = next(lines)
-            target = int(line);
+            target = int(line)
 
             ret = Solution().twoSum(nums, target)
 
-            out = integerListToString(ret);
+            out = integerListToString(ret)
             print(out)
         except StopIteration:
             break
