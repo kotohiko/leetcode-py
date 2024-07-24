@@ -3,6 +3,15 @@ from typing import List
 
 
 class Solution:
+    """
+    Url:
+        https://leetcode.cn/problems/two-sum/description/
+    Author:
+        Jacob Suen
+    Time:
+        22:02 Jun 29th, 2024
+    """
+
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashtable = dict()
         for i, num in enumerate(nums):
@@ -25,7 +34,6 @@ def integerListToString(nums, len_of_list=None):
 def main():
     import sys
     import io
-
     def readlines():
         for line in io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8'):
             yield line.strip('\n')

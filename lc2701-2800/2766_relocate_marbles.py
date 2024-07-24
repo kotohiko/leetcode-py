@@ -3,6 +3,15 @@ from typing import List
 
 
 class Solution:
+    """
+    Url:
+        https://leetcode.cn/problems/relocate-marbles/description/
+    Author:
+        Jacob Suen
+    Time:
+        10:31 Jul 24th, 2024
+    """
+
     def relocateMarbles(self, nums: List[int], moveFrom: List[int], moveTo: List[int]) -> List[int]:
         st = set(nums)
         for f, t in zip(moveFrom, moveTo):
@@ -32,15 +41,15 @@ def main():
     while True:
         try:
             line = next(lines)
-            nums = stringToIntegerList(line);
+            nums = stringToIntegerList(line)
             line = next(lines)
-            moveFrom = stringToIntegerList(line);
+            moveFrom = stringToIntegerList(line)
             line = next(lines)
-            moveTo = stringToIntegerList(line);
+            moveTo = stringToIntegerList(line)
 
             ret = Solution().relocateMarbles(nums, moveFrom, moveTo)
 
-            out = integerListToString(ret);
+            out = integerListToString(ret)
             print(out)
         except StopIteration:
             break

@@ -1,4 +1,13 @@
 class Solution:
+    """
+    Url:
+        https://leetcode.cn/problems/add-binary/description/
+    Author:
+        Jacob Suen
+    Time:
+        08:03 Jul 10th, 2024
+    """
+
     def addBinary(self, a, b) -> str:
         x, y = int(a, 2), int(b, 2)
         while y:
